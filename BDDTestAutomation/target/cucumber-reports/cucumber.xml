@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="140.854">
+<testcase classname="Login" name="Login Page Title verification" time="7.82">
+<system-out><![CDATA[Given User is on 'Nop Commerce' Login Page..................................passed
+Then Page Title should be "Your store. Login"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successful Login with Valid Credentials" time="13.693">
+<system-out><![CDATA[Given User is on 'Nop Commerce' Login Page..................................passed
+When user enters the correct email and password.............................passed
+And clicks on login button..................................................passed
+Then Home Page should be displayed..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with Inalid Credentials DDT" time="10.921">
+<system-out><![CDATA[Given User is on 'Nop Commerce' Login Page..................................passed
+When user enters the incorrect email and password...........................passed
+And clicks on login button..................................................passed
+Then error message should be displayed......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customers" name="Add New Customer" time="17.368">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When user enters the correct email and password.............................passed
+And clicks on login button..................................................passed
+Then Home Page should be displayed..........................................passed
+Given User is on Home Page..................................................passed
+When User click on customers Menu...........................................passed
+And click on customers Menu Item............................................passed
+And click on Add new button.................................................passed
+Then User can view Add new customer page....................................passed
+When User enter customer info...............................................passed
+And click on Save button....................................................passed
+Then User can view confirmation message.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customers" name="Search Customer by Email" time="18.063">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When user enters the correct email and password.............................passed
+And clicks on login button..................................................passed
+Then Home Page should be displayed..........................................passed
+Given User is on 'Nop Commerce' Login Page..................................passed
+When User click on customers Menu...........................................passed
+And click on customers Menu Item............................................passed
+And Enter customer EMail....................................................passed
+Then Click on search button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customers" name="Search Customer by Email 2" time="14.868">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When user enters the correct email and password.............................passed
+And clicks on login button..................................................passed
+Then Home Page should be displayed..........................................passed
+Given User is on Home Page..................................................passed
+When User click on customers Menu...........................................passed
+And click on customers Menu Item............................................passed
+And Enter customer FirstName................................................passed
+And Enter customer LastName.................................................passed
+Then Click on search button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customers" name="Accessing online customers" time="13.921">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When user enters the correct email and password.............................passed
+And clicks on login button..................................................passed
+Then Home Page should be displayed..........................................passed
+Given User is on Home Page..................................................passed
+When User click on customers Menu...........................................passed
+And click on online customers Menu Item.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customers" name="Accessing activity logs" time="13.344">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When user enters the correct email and password.............................passed
+And clicks on login button..................................................passed
+Then Home Page should be displayed..........................................passed
+Given User is on Home Page..................................................passed
+When User click on customers Menu...........................................passed
+And click on activity types Menu Item.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customers" name="Accessing the available stores" time="15.775">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When user enters the correct email and password.............................passed
+And clicks on login button..................................................passed
+Then Home Page should be displayed..........................................passed
+Given User is on Home Page..................................................passed
+When User click on configuration Menu.......................................passed
+And click on stores Menu Item...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customers" name="Accessing the available payment methods" time="14.839">
+<system-out><![CDATA[Given User is on Login Page.................................................passed
+When user enters the correct email and password.............................passed
+And clicks on login button..................................................passed
+Then Home Page should be displayed..........................................passed
+Given User is on Home Page..................................................passed
+When User click on configuration Menu.......................................passed
+And click on payment methods Menu Item......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
